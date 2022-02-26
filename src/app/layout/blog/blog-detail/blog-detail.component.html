@@ -1,0 +1,21 @@
+<div class="row detail">
+    <div class="card">
+        <div class="card-body">
+            <div class="row mb-3">
+                <div class="col-lg-3 col-xs-12">
+                    <img class="detail-image" [src]="blog.image?.url" />
+                </div>
+                <div class="col-9 col-xs-12">
+                    <div>
+                        <h4>{{blog.title}}</h4>
+                        <p>{{blog.content}}</p>
+                        <p>Created at{{blog.created_at}}</p>
+                        <p>Updated at{{blog.updated_at}}</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn btn-primary" (click)="returnList()">Back</button>
+        </div>
+    </div>
+</div>

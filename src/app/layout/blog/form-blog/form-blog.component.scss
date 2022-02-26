@@ -1,0 +1,17 @@
+.form {
+  &-image {
+    width: 18rem;
+    height: 18rem;
+    image-rendering: pixelated;
+    object-fit: cover;
+  }
+  &-button {
+    &__back {
+      margin-left: 1rem;
+    }
+  }
+  &-spriner {
+    width: 4rem;
+    height: 4rem;
+  }
+}

@@ -1,0 +1,8 @@
+.blog {
+  &-image {
+    width: 10rem;
+    height: 10rem;
+    image-rendering: pixelated;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,17 @@
+.detail {
+  &-image {
+    width: 18rem;
+    height: 18rem;
+    image-rendering: pixelated;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 1024px) {
+  .detail-image {
+    width: 13rem;
+    height: 13rem;
+    image-rendering: pixelated;
+    object-fit: cover;
+  }
+}
