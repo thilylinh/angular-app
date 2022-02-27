@@ -55,6 +55,17 @@ export class ListBlogComponent implements OnInit {
   updateBlock(id: number) {
     this.router.navigate(['/update/', id])
   }
+  deleteBlock(id: number) {
+    this.blogService.deleteBlog(id).then((res) => {
+      var index = this.blogs.findIndex(x => x.id === id);
+      if (index > -1) {
+        this.blogs.splice(index, 1);
+        alert("Delete success");
+      }
+    }).catch((err) => {
+      console.log(err);
+    })
+  }
 
   pageChanged(e: number) {
     this.page = e;

@@ -40,7 +40,9 @@ export class FormBlogComponent implements OnInit {
     var blogFormData = new FormData();
     blogFormData.append('blog[title]', this.blog.title);
     blogFormData.append('blog[content]', this.blog.content);
-    blogFormData.append('blog[image]', this.file);
+    if (this.file) {
+      blogFormData.append('blog[image]', this.file);
+    }
 
     this.isSubmitted = true;
     if (this.isEdit) {

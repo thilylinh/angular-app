@@ -5,4 +5,10 @@
     image-rendering: pixelated;
     object-fit: cover;
   }
+
+  &-button {
+    &__delete {
+      margin-left: 0.5rem;
+    }
+  }
 }
