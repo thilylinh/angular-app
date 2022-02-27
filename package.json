@@ -11,6 +11,7 @@
   },
   "private": true,
   "dependencies": {
+    "@angular-devkit/build-angular": "~12.2.0",
     "@angular/animations": "~12.2.0",
     "@angular/common": "~12.2.0",
     "@angular/compiler": "~12.2.0",
@@ -30,7 +31,6 @@
     "typescript": "~4.3.5"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~12.2.0",
     "@angular-eslint/builder": "12.7.0",
     "@angular-eslint/eslint-plugin": "12.7.0",
     "@angular-eslint/eslint-plugin-template": "12.7.0",
